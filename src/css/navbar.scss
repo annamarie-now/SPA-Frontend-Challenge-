@@ -1,0 +1,52 @@
+//Navbar
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(197, 196, 196);
+    background-color: #181a1b;
+    padding: 10px 20px;
+  }
+  
+  .home_link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navLinkContainer {
+    align-items: flex-end;
+  }
+  .navbar__link {
+    display: inline-flex;
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+    background-color: #1d1e1f;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar__link--active {
+    color: #fff !important;
+  }
+  
+  .navMenu_link:hover {
+    border: 1px solid #43698c;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .activeStars {
+    background-color: rgb(241, 122, 44) !important;
+  }
+  
+  .activeUniverses {
+    background-color: rgb(81, 181, 84) !important;
+  }
+  
+  .activeImprint {
+    background-color: #6c757d;
+  }

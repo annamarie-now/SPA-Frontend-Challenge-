@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/homepage.scss";
 import { Button } from "react-bootstrap";
 
 
@@ -10,9 +11,9 @@ export const home = () => {
       <Button className="homeButton homeButtonUniverse" href="/universes" variant="outline-secondary">Discover universes</Button>
 
       </div>
-      <div className="imprintContainer" >
+      {/* <div className="imprintContainer" >
       <Button className="homeButton" href="/imprint" variant="outline-secondary">Imprint</Button>
-      </div>
+      </div> */}
       </div>;
 };
 

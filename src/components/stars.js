@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "../css/tables.scss";
 import { Form, Button } from "react-bootstrap";
 
 class Stars extends Component {
@@ -16,10 +17,8 @@ class Stars extends Component {
         this.setState({
           stars: res.data.stars
         });
-        console.log(res.data.stars);
       })
       .catch(function(error) {
-        console.log(error);
       });
 
     axios
@@ -28,10 +27,8 @@ class Stars extends Component {
         this.setState({
           universes: res.data.universes
         });
-        console.log(res.data.universes);
       })
       .catch(function(error) {
-        console.log(error);
       });
   }
 
@@ -52,7 +49,6 @@ class Stars extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    console.log(this.state);
     const { id, name, universeId, universe, color } = this.state;
     this.setState({
       stars: [...this.state.stars, { id, name, universeId, universe, color }]

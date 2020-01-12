@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import "./css/style.scss";
+import "./css/app.scss";
 import Navbar from "./components/navbar";
 import Home from "./components/home";
 import Imprint from "./components/imprint";

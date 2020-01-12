@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "../css/tables.scss";
 import { Form, Button } from "react-bootstrap";
 
 export default class universes extends Component {
@@ -14,10 +15,8 @@ export default class universes extends Component {
         this.setState({
           universes: res.data.universes
         });
-        console.log(res.data.universes);
       })
       .catch(function(error) {
-        console.log(error);
       });
   }
   handleChange = event => {
@@ -30,7 +29,6 @@ export default class universes extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    console.log(this.state);
     const { id, name, maxSize } = this.state;
     this.setState({
       universes: [...this.state.universes, { id, name, maxSize }]
@@ -51,7 +49,6 @@ export default class universes extends Component {
             {this.state.universes.map(universe => {
               return (
                 <tr key={universe.id}>
-                  {/*  { <th scope="row">{1}</th> } */}
                   <td>{universe.id}</td>
                   <td>{universe.name}</td>
                   <td>{universe.maxSize}</td>

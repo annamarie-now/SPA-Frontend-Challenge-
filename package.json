@@ -1,5 +1,5 @@
 {
-  "name": "spa-react",
+  "name": "spa-react-challenge",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,6 +37,21 @@
     ]
   },
   "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
     "mocha": "^7.0.0"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annamarie-now/SPA-Frontend-Challenge-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annamarie-now/SPA-Frontend-Challenge-/issues"
+  },
+  "homepage": "https://github.com/annamarie-now/SPA-Frontend-Challenge-#readme"
 }

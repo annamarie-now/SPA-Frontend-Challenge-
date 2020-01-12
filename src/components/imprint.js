@@ -3,6 +3,6 @@ import "../css/imprint.scss";
 
 export default class imprint extends Component {
   render() {
-    return <div className="imprintCopy">Anna-Marie Nauruschat</div>;
+    return <div className="imprintCopy">anna-marie nauruschat</div>;
   }
 }

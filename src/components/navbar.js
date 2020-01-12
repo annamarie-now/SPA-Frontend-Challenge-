@@ -7,7 +7,7 @@ export const navbar = props => {
       <nav className="navbar navStyle">
       <h2 className="home">
         <a className="home_link" href="/">
-        WIKIVERSE
+        addaVerse
         </a>
       </h2>
       <div className="navLinkContainer">
@@ -18,7 +18,7 @@ export const navbar = props => {
       className="navbar__link navMenu"
       to="/stars"
     >
-      Stars
+      stars
     </NavLink>
 
     <NavLink
@@ -27,7 +27,7 @@ export const navbar = props => {
       className="navbar__link navMenu"
       to="/universes"
     >
-      Universes
+      universes
     </NavLink>
 
     <NavLink
@@ -36,7 +36,7 @@ export const navbar = props => {
       className="navbar__link navMenu"
       to="/imprint"
     >
-      Imprint
+      imprint
     </NavLink>
 
     </div>

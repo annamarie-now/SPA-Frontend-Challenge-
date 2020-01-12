@@ -2,25 +2,27 @@
 nav {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(197, 196, 196);
+    border-bottom: 1px solid #fff;
     background-color: #181a1b;
-    padding: 10px 20px;
+    padding: 1rem 2rem 0.5rem 2rem !important;
   }
   
   .home_link {
     color: #fff;
     text-decoration: none;
+    font-family: 'Bowlby One SC', cursive !important;
+    font-size: 4rem;
   }
   
   .navLinkContainer {
     align-items: flex-end;
   }
+
   .navbar__link {
     display: inline-flex;
     list-style: none;
     display: inline-block;
     margin: 5px;
-    border: 1px solid white;
     text-decoration: none;
     border-radius: 5px;
     padding: 3px;
@@ -34,17 +36,18 @@ nav {
   }
   
   .navMenu_link:hover {
-    border: 1px solid #43698c;
+    border: 1px solid #fff;
     background-color: white;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
+  
   .activeStars {
-    background-color: rgb(241, 122, 44) !important;
+    background-color: rgb(237, 133, 66)  !important;
   }
   
   .activeUniverses {
-    background-color: rgb(81, 181, 84) !important;
+    background-color: rgb(90, 198, 94) !important;
   }
   
   .activeImprint {

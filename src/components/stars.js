@@ -62,10 +62,10 @@ class Stars extends Component {
         <table className="table table-striped">
           <thead>
             <tr className="tableHeader tableHeaderStars">
-              <th scope="col">Id</th>
-              <th scope="col">Name</th>
-              <th scope="col">Universe Id</th>
-              <th scope="col">Universe</th>
+              <th scope="col">id</th>
+              <th scope="col">name</th>
+              <th scope="col">universe id</th>
+              <th scope="col">universe</th>
               </tr>
           </thead>
 
@@ -95,7 +95,7 @@ class Stars extends Component {
             id="id"
             value={this.state.id}
             onChange={this.handleChange}
-            placeholder="Id"
+            placeholder="id"
           />
           <Form.Control
             className="formField"
@@ -104,7 +104,7 @@ class Stars extends Component {
             id="name"
             value={this.state.name}
             onChange={this.handleChange}
-            placeholder="Name"
+            placeholder="name"
           />
           <Form.Control
             className="formField"
@@ -113,7 +113,7 @@ class Stars extends Component {
             id="universeId"
             value={this.state.universeId}
             onChange={this.handleChange}
-            placeholder="Universe Id"
+            placeholder="universe id"
           />
           {/*   <Form.Control
             className="formField"
@@ -131,10 +131,10 @@ class Stars extends Component {
             id="color"
             value={this.state.color}
             onChange={this.handleChange}
-            placeholder="Color"
+            placeholder="color"
           />
           <Button className="addButton addButtonStars"  variant="primary" type="submit">
-            Add a star
+            add a star
           </Button>
         </Form>
       </>

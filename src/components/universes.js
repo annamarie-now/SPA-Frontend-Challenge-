@@ -40,9 +40,9 @@ export default class universes extends Component {
         <table className="table table-striped">
         <thead>
             <tr className="tableHeader tableHeaderUniverses">
-              <th scope="col">Id</th>
-              <th scope="col">Name</th>
-              <th scope="col">Maximum size</th>
+              <th scope="col">id</th>
+              <th scope="col">name</th>
+              <th scope="col">maximum size</th>
             </tr>
           </thead>
           <tbody>
@@ -66,7 +66,7 @@ export default class universes extends Component {
             id="id"
             value={this.state.id}
             onChange={this.handleChange}
-            placeholder="Id"
+            placeholder="id"
           />
           <Form.Control
             className="formField"
@@ -75,7 +75,7 @@ export default class universes extends Component {
             id="name"
             value={this.state.name}
             onChange={this.handleChange}
-            placeholder="Name"
+            placeholder="name"
           />
           <Form.Control
             className="formField"
@@ -84,10 +84,10 @@ export default class universes extends Component {
             id="maxSize"
             value={this.state.maxSize}
             onChange={this.handleChange}
-            placeholder="Maximum size"
+            placeholder="maximum size"
           />
           <Button className="addButton addButtonUniverses" variant="primary" type="submit">
-            Add a universe
+            add a universe
           </Button>
         </Form>
       </div>

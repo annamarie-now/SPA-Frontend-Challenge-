@@ -1,27 +1,21 @@
 module.exports = function(grunt){
 
   grunt.initConfig({
-
-pkg: grunt.file.readJSON('package.json'),
-cssmin:{
-    combine:{
-        files:{
-            'src/css/mainMin.css': ['/src/app.scss', '/src/css/homepage.scss', '/src/css/navbar.scss', '/src/css/tables.scss', '/src/css/imprint.scss']
-        }
-    }
-},
-uglify:{
-    dist:{
-        files:{
-            'src/App.min.js': ['src/App.js', 'src/components/home.js', 'src/components/navbar.js', 'src/components/stars.js', 'src/components/universes.js', 'src/components/imprint.js']
-        }
-    }
-}
+ concat: {
+     js: {
+         src: ['./src/App.js', './src/components/*.js'],
+         dest: 'build/scripts.js'
+     },
+     css: {
+        src: ['./src/css/*.scss'],
+        dest: 'build/styles.css'
+ }}
 
   });
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  //grunt.loadNpmTasks('grunt-contrib-cssmin');
+  //grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('default', ['cssmin','uglify']);
+  //grunt.registerTask('default', ['cssmin','uglify']);
 };

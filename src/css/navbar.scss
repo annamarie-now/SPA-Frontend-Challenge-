@@ -1,4 +1,6 @@
 //Navbar
+$starsButton : rgb(237, 133, 66);
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -43,7 +45,7 @@ nav {
   }
   
   .activeStars {
-    background-color: rgb(237, 133, 66)  !important;
+    background-color: $starsButton  !important;
   }
   
   .activeUniverses {
